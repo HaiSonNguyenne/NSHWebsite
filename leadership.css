@@ -1,0 +1,572 @@
+/* Leadership & Activities Section Styles */
+#leadership {
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafb 100%);
+    padding: 100px 2rem 4rem;
+    min-height: 100vh;
+}
+
+/* Section Title - Căn trái */
+.section-title {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    background: linear-gradient(135deg, #4a90e2, #5dade2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: left;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Category Tabs - Căn trái */
+.category-tabs {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 80px;
+}
+
+.tab-btn {
+    padding: 10px 30px;
+    background: #ffffff;
+    border: 2px solid #e0e6ed;
+    border-radius: 25px;
+    color: #5a6c7d;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tab-btn:hover {
+    border-color: #4a90e2;
+    color: #4a90e2;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(74, 144, 226, 0.2);
+}
+
+.tab-btn.active {
+    background: linear-gradient(135deg, #4a90e2, #5dade2);
+    color: #ffffff;
+    border-color: transparent;
+}
+
+/* Timeline Container */
+.timeline-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline-container::before {
+    content: '';
+    position: absolute;
+    left: 50px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(180deg, #4a90e2, #5dade2);
+    opacity: 0.3;
+}
+
+/* Timeline Item */
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+    animation: slideInLeft 0.6s ease;
+}
+
+.timeline-item[data-category] {
+    transition: all 0.3s ease;
+}
+
+.timeline-item.hidden {
+    display: none;
+}
+
+/* Timeline Marker */
+.timeline-marker {
+    position: absolute;
+    left: 41px;
+    top: 50px;
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    border: 3px solid #4a90e2;
+    border-radius: 50%;
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+
+.timeline-item:hover .timeline-marker {
+    background: #4a90e2;
+    transform: scale(1.2);
+    box-shadow: 0 0 20px rgba(74, 144, 226, 0.5);
+}
+
+/* Activity Card */
+.activity-card {
+    margin-left: 80px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(74, 144, 226, 0.1);
+    overflow: hidden;
+    display: flex;
+    transition: all 0.3s ease;
+}
+
+.activity-card:hover {
+    box-shadow: 0 10px 40px rgba(74, 144, 226, 0.2);
+    transform: translateX(10px);
+}
+
+.activity-card.expanded {
+    background: linear-gradient(135deg, #ffffff 0%, #f5f9fc 100%);
+}
+
+/* Activity Image */
+.activity-image {
+    width: 300px;
+    min-height: 250px;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #e8f4fd 0%, #f0f4f8 100%);
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.activity-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.activity-image:hover .activity-img {
+    transform: scale(1.1);
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(74, 144, 226, 0.7), rgba(93, 173, 226, 0.7));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.activity-image:hover .image-overlay {
+    opacity: 1;
+}
+
+.zoom-icon {
+    font-size: 3rem;
+    color: #ffffff;
+    animation: pulse 1.5s infinite;
+}
+
+/* Activity Content - Căn trái */
+.activity-content {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Activity Header - Căn trái */
+.activity-header {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e8f4fd;
+    padding-bottom: 15px;
+    text-align: left;
+}
+
+.activity-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.activity-organization {
+    display: block;
+    font-size: 1.1rem;
+    color: #4a90e2;
+    font-weight: 500;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.activity-date {
+    display: block;
+    font-size: 0.95rem;
+    color: #7a8a9a;
+    font-style: italic;
+    margin-top: 5px;
+    text-align: left;
+}
+
+/* Activity Description - Căn trái */
+.activity-description {
+    flex: 1;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.activity-description > p {
+    color: #5a6c7d;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.activity-achievements {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.activity-achievements li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    color: #5a6c7d;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.activity-achievements li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #4a90e2;
+    font-weight: bold;
+}
+
+/* Sub Projects - Căn trái */
+.sub-projects {
+    margin-top: 20px;
+}
+
+.sub-project {
+    background: #f8fafb;
+    border-left: 3px solid #4a90e2;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 0 10px 10px 0;
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
+.sub-project:hover {
+    background: #e8f4fd;
+    transform: translateX(5px);
+}
+
+.sub-project h4 {
+    color: #2c3e50;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.sub-project ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sub-project li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 8px;
+    color: #5a6c7d;
+    font-size: 0.95rem;
+    text-align: left;
+}
+
+.sub-project li::before {
+    content: '•';
+    position: absolute;
+    left: 5px;
+    color: #5dade2;
+}
+
+/* Sub Project Link */
+.sub-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #4a90e2;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.sub-link:hover {
+    color: #5dade2;
+    transform: translateX(5px);
+}
+
+/* Activity Links - Căn trái */
+.activity-links {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.link-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 20px;
+    background: linear-gradient(135deg, #4a90e2, #5dade2);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.link-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(74, 144, 226, 0.3);
+    background: linear-gradient(135deg, #5dade2, #4a90e2);
+}
+
+.link-icon {
+    font-size: 1.1rem;
+}
+
+/* Image Modal */
+.image-modal {
+    display: none;
+    position: fixed;
+    z-index: 3000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.image-modal.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    animation: fadeIn 0.3s ease;
+}
+
+.modal-image-container {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    z-index: 1;
+    animation: zoomIn 0.3s ease;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.modal-full-image {
+    width: 100%;
+    height: auto;
+    max-height: 85vh;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5);
+}
+
+.close-image-modal {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    font-size: 3rem;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 300;
+}
+
+.close-image-modal:hover {
+    color: #4a90e2;
+    transform: rotate(90deg);
+}
+
+.modal-caption {
+    text-align: center;
+    color: #ffffff;
+    padding: 15px;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+/* Animations */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 968px) {
+    .timeline-container::before {
+        left: 30px;
+    }
+    
+    .timeline-marker {
+        left: 21px;
+    }
+    
+    .activity-card {
+        margin-left: 60px;
+        flex-direction: column;
+    }
+    
+    .activity-image {
+        width: 100%;
+        height: 250px;
+    }
+    
+    .category-tabs {
+        padding-left: 60px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .section-title {
+        font-size: 2rem;
+        padding: 0 20px;
+    }
+    
+    .timeline-container::before {
+        left: 20px;
+    }
+    
+    .timeline-marker {
+        left: 11px;
+        width: 16px;
+        height: 16px;
+    }
+    
+    .activity-card {
+        margin-left: 40px;
+    }
+    
+    .activity-content {
+        padding: 20px;
+    }
+    
+    .activity-title {
+        font-size: 1.1rem;
+    }
+    
+    .activity-organization {
+        font-size: 1rem;
+    }
+    
+    .category-tabs {
+        gap: 10px;
+        padding-left: 40px;
+    }
+    
+    .tab-btn {
+        padding: 8px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .sub-project {
+        padding: 12px;
+    }
+    
+    .sub-project h4 {
+        font-size: 1rem;
+    }
+    
+    .activity-links {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .link-btn {
+        justify-content: center;
+    }
+    
+    .modal-image-container {
+        max-width: 95%;
+        max-height: 95%;
+    }
+    
+    .close-image-modal {
+        top: 10px;
+        right: 10px;
+        font-size: 2.5rem;
+        background: rgba(0, 0, 0, 0.5);
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+    }
+}

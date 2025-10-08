@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Son Hai Nguyen - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="achievements.css">
+    <link rel="stylesheet" href="leadership.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Floating Symbols Background -->
+    <div class="stars-container" id="starsContainer"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">SHN</div>
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link active">About Me</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#leadership" class="nav-link">Leadership & Activities</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Me Section -->
+    <section id="about" class="section active">
+        <div class="about-container">
+            <div class="left-side">
+                <div class="sphere-wrapper">
+                    <canvas id="sphereCanvas"></canvas>
+                    <div class="avatar-container">
+                        <img src="avatar.jpg" alt="Son Hai Nguyen" class="avatar">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="right-side">
+                <div class="intro-text">
+                    <h1 class="name-title">I'm <span class="highlight">Son Hai Nguyen</span></h1>
+                    <div class="subtitle">Anh I'm a math lover and a gamer</div>
+                    <p class="description">
+                        Every moment spent solving math problems and playing games with friends brings me happiness each day. I also enjoy astronomy, physics, and philosophy. I am curious about how everything works–especially how our universe operates–and reading philosophy helps me perceive the world around me.
+                    </p>
+                    <div class="quote-container">
+                        <p class="quote">"Mathematics is the language with which God has written the universe"</p>
+                        <p class="author">- Galileo Galilei</p>
+                    </div>
+                    <div class="interests">
+                        <div class="interest-item">
+                            <span class="icon">∞</span>
+                            <span>Calculus & Analysis</span>
+                        </div>
+                        <div class="interest-item">
+                            <span class="icon">Σ</span>
+                            <span>Abstract Algebra</span>
+                        </div>
+                        <div class="interest-item">
+                            <span class="icon">φ</span>
+                            <span>Existential Crisis</span>
+                        </div>
+                        <div class="interest-item">
+                            <span class="icon">λ</span>
+                            <span>Chúa Yapping</span>
+                        </div>
+                    </div>
+                    <div class="cta-buttons">
+                        <button class="btn-primary">Explore My Work</button>
+                        <button class="btn-secondary">Connect</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section">
+        <div class="section-container">
+            <h2 class="section-title">Achievements</h2>
+            
+            <div class="achievements-grid">
+                <!-- Certificate 1 -->
+                <div class="certificate-card" data-cert-id="1">
+                    <div class="cert-image-wrapper">
+                        <img src="Ảnh\nhathsgqg.jpg" alt="Certificate 1" class="cert-image">
+                        <div class="cert-overlay">
+                            <span class="view-icon">🔍</span>
+                        </div>
+                    </div>
+                    <div class="cert-info">
+                        <h3 class="cert-title">Vietnam’s National Math Olympiad (2024)</h3>
+                        <p class="cert-award">🥇 FIRST PRIZE</p>
+                    </div>
+                </div>
+
+                <!-- Certificate 2 -->
+                <div class="certificate-card" data-cert-id="2">
+                    <div class="cert-image-wrapper">
+                        <img src="Ảnh\nhitp.jpg" alt="Certificate 2" class="cert-image">
+                        <div class="cert-overlay">
+                            <span class="view-icon">🔍</span>
+                        </div>
+                    </div>
+                    <div class="cert-info">
+                        <h3 class="cert-title">Math Olympiad of HCMC (2023)</h3>
+                        <p class="cert-award">🥈 SECOND PRIZE</p>
+                    </div>
+                </div>
+
+                <!-- Certificate 3 -->
+                <div class="certificate-card" data-cert-id="3">
+                    <div class="cert-image-wrapper">
+                        <img src="Ảnh\Stemco_page-0001.jpg" alt="Certificate 3" class="cert-image">
+                        <div class="cert-overlay">
+                            <span class="view-icon">🔍</span>
+                        </div>
+                    </div>
+                    <div class="cert-info">
+                        <h3 class="cert-title">StemCo Spring 2025</h3>
+                        <p class="cert-award">🥇 Gold Medal</p>
+                    </div>
+                </div>
+
+                <!-- Certificate 4 -->
+                <div class="certificate-card" data-cert-id="4">
+                    <div class="cert-image-wrapper">
+                        <img src="Ảnh\IMG_3931.PNG" alt="Certificate 4" class="cert-image">
+                        <div class="cert-overlay">
+                            <span class="view-icon">🔍</span>
+                        </div>
+                    </div>
+                    <div class="cert-info">
+                        <h3 class="cert-title">Math Competition with Handheld Calculator of HCMC (2023)</h3>
+                        <p class="cert-award">🥈 Second Prize</p>
+                    </div>
+                </div>
+
+                <!-- Certificate 5 -->
+                <div class="certificate-card" data-cert-id="5">
+                    <div class="cert-image-wrapper">
+                        <img src="Ảnh\viasm.jpg" alt="Certificate 5" class="cert-image">
+                        <div class="cert-overlay">
+                            <span class="view-icon">🔍</span>
+                        </div>
+                    </div>
+                    <div class="cert-info">
+                        <h3 class="cert-title">VIASM’s Summer Math Challenge 2025</h3>
+                        <p class="cert-award">🥈 Second Prize</p>
+                    </div>
+                </div>
+
+                <!-- Certificate 6 -->
+                <div class="certificate-card" data-cert-id="6">
+                    <div class="cert-image-wrapper">
+                        <img src="Ảnh\igo.jpg" alt="Certificate 6" class="cert-image">
+                        <div class="cert-overlay">
+                            <span class="view-icon">🔍</span>
+                        </div>
+                    </div>
+                    <div class="cert-info">
+                        <h3 class="cert-title">Iranian Geometry Olympiad (2023)</h3>
+                        <p class="cert-award">Aluminium Compass</p>
+                    </div>
+                </div>
+
+                <!-- Certificate 7-->
+                <div class="certificate-card" data-cert-id="7">
+                    <div class="cert-image-wrapper">
+                        <img src="Ảnh\VNNO.PNG" alt="Certificate 7" class="cert-image">
+                        <div class="cert-overlay">
+                            <span class="view-icon">🔍</span>
+                        </div>
+                    </div>
+                    <div class="cert-info">
+                        <h3 class="cert-title">Vietnam Number Theory Olympiad (Advanced Level) (2024)</h3>
+                        <p class="cert-award">Consolation Prize (Top 14)</p>
+                    </div>
+                </div>
+
+                <!-- Certificate 8-->
+                <div class="certificate-card" data-cert-id="8">
+                    <div class="cert-image-wrapper">
+                        <img src="Ảnh.PNG" alt="Certificate 7" class="cert-image">
+                        <div class="cert-overlay">
+                            <span class="view-icon">🔍</span>
+                        </div>
+                    </div>
+                    <div class="cert-info">
+                        <h3 class="cert-title">Học sinh giỏi 9</h3>
+                        <p class="cert-award">Top 5% lớp</p>
+                    </div>
+                </div>
+
+                <!-- Certificate 9-->
+                <div class="certificate-card" data-cert-id="9">
+                    <div class="cert-image-wrapper">
+                        <img src="Ảnh.PNG" alt="Certificate 9" class="cert-image">
+                        <div class="cert-overlay">
+                            <span class="view-icon">🔍</span>
+                        </div>
+                    </div>
+                    <div class="cert-info">
+                        <h3 class="cert-title">Học sinh xuất sắc 10</h3>
+                        <p class="cert-award">Top 5% lớp</p>
+                    </div>
+                </div> 
+                
+                <!-- Certificate 10-->
+                <div class="certificate-card" data-cert-id="10">
+                    <div class="cert-image-wrapper">
+                        <img src="Ảnh.PNG" alt="Certificate 10" class="cert-image">
+                        <div class="cert-overlay">
+                            <span class="view-icon">🔍</span>
+                        </div>
+                    </div>
+                    <div class="cert-info">
+                        <h3 class="cert-title">Học sinh xuất sắc 11</h3>
+                        <p class="cert-award">Top 5% lớp</p>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership & Activities Section -->
+    <section id="leadership" class="section">
+        <div class="section-container">
+            <h2 class="section-title">Leadership & Activities</h2>
+            
+            <!-- Category Tabs -->
+            <div class="category-tabs">
+                <button class="tab-btn active" data-category="all">All</button>
+                <button class="tab-btn" data-category="leadership">Leadership</button>
+                <button class="tab-btn" data-category="summer-camp">Summer Camp</button>
+                <button class="tab-btn" data-category="speaker">Speaker</button>
+                <button class="tab-btn" data-category="community-service">Community Service</button>
+            </div>
+
+            <!-- Timeline -->
+            <div class="timeline-container">
+                
+                <!-- Activity 1: The ENTEN Project -->
+                <div class="timeline-item" data-category="leadership">
+                    <div class="timeline-marker"></div>
+                    <div class="activity-card">
+                        <div class="activity-image">
+                            <img src="Ảnh\enten.jpg" alt="The ENTEN Project" class="activity-img" data-full="Ảnh\enten.jpg">
+                            <div class="image-overlay">
+                                <span class="zoom-icon">🔍</span>
+                            </div>
+                        </div>
+                        <div class="activity-content">
+                            <div class="activity-header">
+                                <h3 class="activity-title">Co-Founder & Head of Mathematics Department</h3>
+                                <span class="activity-organization">The ENTEN Project</span>
+                                <span class="activity-date">August 2024 - May 2025</span>
+                            </div>
+                            <div class="activity-description">
+                                <p>A project that helps students advance in Math, Literature, and English</p>
+                                <ul class="activity-achievements">
+                                    <li>Developed advanced documents for each topic, sample tests, and extra exercises</li>
+                                    <li>Provided academic and motivational guidance through online posts and a workshop (with over 40 participants)</li>
+                                    <li>Organized and managed 3 structured classes (more than 50 students) with comprehensive assessment system</li>
+                                </ul>
+                            </div>
+                            <div class="activity-links">
+                                <a href="https://www.facebook.com/theentenproject.education" class="link-btn" target="_blank">
+                                    <span class="link-icon">🌐</span> Fanpage
+                                </a>
+                                <a href="https://drive.google.com/your-certificate-link" class="link-btn" target="_blank">
+                                    <span class="link-icon">📜</span> Certificate
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Activity 2: ArtexDonor -->
+                <div class="timeline-item" data-category="leadership">
+                    <div class="timeline-marker"></div>
+                    <div class="activity-card">
+                        <div class="activity-image">
+                            <img src="Ảnh\artex.jpg" alt="ArtexDonor" class="activity-img" data-full="Ảnh\artex.jpg">
+                            <div class="image-overlay">
+                                <span class="zoom-icon">🔍</span>
+                            </div>
+                        </div>
+                        <div class="activity-content">
+                            <div class="activity-header">
+                                <h3 class="activity-title">Guest Relations and Partnership Manager</h3>
+                                <span class="activity-organization">ArtexDonor</span>
+                                <span class="activity-date">March 2025 - Present</span>
+                            </div>
+                            <div class="activity-description">
+                                <p>A student-led art exhibition and charity auction raising funds</p>
+                                <ul class="activity-achievements">
+                                    <li>Led guest engagement and hospitality for a high-impact fundraising exhibition with over 200 attendees</li>
+                                    <li>Facilitated donor interactions and supported product sales efforts</li>
+                                    <li>Contributed to over 100 items sold and 350 million VND raised for Children Dragon Foundation</li>
+                                </ul>
+                            </div>
+                            <div class="activity-links">
+                                <a href="https://www.facebook.com/artexdonor" class="link-btn" target="_blank">
+                                    <span class="link-icon">🌐</span> Fanpage
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Activity 3: Buom Education -->
+                <div class="timeline-item" data-category="leadership">
+                    <div class="timeline-marker"></div>
+                    <div class="activity-card">
+                        <div class="activity-image">
+                            <img src="buom-education.jpg" alt="Buom Education" class="activity-img" data-full="buom-education-full.jpg">
+                            <div class="image-overlay">
+                                <span class="zoom-icon">🔍</span>
+                            </div>
+                        </div>
+                        <div class="activity-content">
+                            <div class="activity-header">
+                                <h3 class="activity-title">Head of Academics</h3>
+                                <span class="activity-organization">Buom Education</span>
+                                <span class="activity-date">January 2024 - June 2024</span>
+                            </div>
+                            <div class="activity-description">
+                                <p>A project that supports students struggling to study effectively</p>
+                                <ul class="activity-achievements">
+                                    <li>Led and managed academic mentors, ensuring quality teaching and student engagement</li>
+                                    <li>Composed materials containing both basic and advanced exercises</li>
+                                    <li>Supported over 500 grade 9 students through free online classes (80+ classes)</li>
+                                </ul>
+                            </div>
+                            <div class="activity-links">
+                                <a href="https://www.facebook.com/buom.education" class="link-btn" target="_blank">
+                                    <span class="link-icon">🌐</span> Fanpage
+                                </a>
+                                <a href="https://drive.google.com/your-certificate-link" class="link-btn" target="_blank">
+                                    <span class="link-icon">📜</span> Certificate
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Activity 4: The Gifted Battlefields -->
+                <div class="timeline-item" data-category="leadership">
+                    <div class="timeline-marker"></div>
+                    <div class="activity-card expanded">
+                        <div class="activity-image">
+                            <img src="Ảnh\tgb.JPG" alt="The Gifted Battlefields" class="activity-img" data-full="Ảnh\tgb.JPG">
+                            <div class="image-overlay">
+                                <span class="zoom-icon">🔍</span>
+                            </div>
+                        </div>
+                        <div class="activity-content">
+                            <div class="activity-header">
+                                <h3 class="activity-title">Head of Mathematics Department</h3>
+                                <span class="activity-organization">The Gifted Battlefields</span>
+                                <span class="activity-date">October 2024 - July 2025</span>
+                            </div>
+                            <div class="activity-description">
+                                <p>An academic organization running 3 major projects:</p>
+                                
+                                <div class="sub-projects">
+                                    <div class="sub-project">
+                                        <h4>🐤 Chicken Minds</h4>
+                                        <ul>
+                                            <li>Organized annual mock entrance exams for 400+ grade 9 students over 4 years</li>
+                                            <li>Reviewed and appraised top high schools</li>
+                                            <li>Coordinated workshops with 300+ participants each</li>
+                                        </ul>
+                                        <a href="https://www.facebook.com/chicken.minds" class="sub-link" target="_blank">Visit Fanpage →</a>
+                                    </div>
+                                    
+                                    <div class="sub-project">
+                                        <h4>🎓 Highschool of People</h4>
+                                        <ul>
+                                            <li>Designed advanced academic resources beyond school curriculum</li>
+                                            <li>Led events (150+ in 2023, 200+ in 2024)</li>
+                                            <li>Published guidance articles on high school life and career pathways</li>
+                                        </ul>
+                                        <a href="https://www.facebook.com/highschool.people" class="sub-link" target="_blank">Visit Fanpage →</a>
+                                    </div>
+                                    
+                                    <div class="sub-project">
+                                        <h4>🏆 Intellectual Showdown</h4>
+                                        <ul>
+                                            <li>Organized "La Grande Finale" competition with 60+ participants annually</li>
+                                            <li>Created platform for CS-passionate students aged 11-20</li>
+                                            <li>Enhanced competitive programming skills through contests</li>
+                                        </ul>
+                                        <a href="https://www.facebook.com/intellectual.showdown" class="sub-link" target="_blank">Visit Fanpage →</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="activity-links">
+                                <a href="https://www.giftedbattlefields.com" class="link-btn" target="_blank">
+                                    <span class="link-icon">🌐</span> Website
+                                </a>
+                                <a href="https://www.facebook.com/gifted.battlefields" class="link-btn" target="_blank">
+                                    <span class="link-icon">📘</span> Main Fanpage
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Activity 5: Amanercer Brillante -->
+                <div class="timeline-item" data-category="leadership">
+                    <div class="timeline-marker"></div>
+                    <div class="activity-card">
+                        <div class="activity-image">
+                            <img src="amanercer.jpg" alt="Amanercer Brillante" class="activity-img" data-full="amanercer-full.jpg">
+                            <div class="image-overlay">
+                                <span class="zoom-icon">🔍</span>
+                            </div>
+                        </div>
+                        <div class="activity-content">
+                            <div class="activity-header">
+                                <h3 class="activity-title">President</h3>
+                                <span class="activity-organization">Amanercer Brillante</span>
+                                <span class="activity-date">January 2025 - Present</span>
+                            </div>
+                            <div class="activity-description">
+                                <p>Leading a new initiative focused on educational excellence and community development</p>
+                                <ul class="activity-achievements">
+                                    <li>Established organizational structure and strategic vision</li>
+                                    <li>Building partnerships with educational institutions</li>
+                                    <li>Developing programs for student advancement</li>
+                                </ul>
+                            </div>
+                            <div class="activity-links">
+                                <a href="https://www.facebook.com/amanercer.brillante" class="link-btn" target="_blank">
+                                    <span class="link-icon">🌐</span> Fanpage
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Summer Camp 1: PiMA -->
+                <div class="timeline-item" data-category="summer-camp">
+                    <div class="timeline-marker"></div>
+                    <div class="activity-card">
+                        <div class="activity-image">
+                            <img src="Ảnh\pima.JPG" alt="PiMA Camp" class="activity-img" data-full="Ảnh\pima.JPG">
+                            <div class="image-overlay">
+                                <span class="zoom-icon">🔍</span>
+                            </div>
+                        </div>
+                        <div class="activity-content">
+                            <div class="activity-header">
+                                <h3 class="activity-title">Camp Participant</h3>
+                                <span class="activity-organization">PiMA - Projects in Mathematics and Applications</span>
+                                <span class="activity-date">August 2025</span>
+                            </div>
+                            <div class="activity-description">
+                                <p>A summer camp for high school students focused on applied mathematics</p>
+                                <ul class="activity-achievements">
+                                    <li>Learned about AI and programming generative models using camp knowledge</li>
+                                    <li>Worked on group projects and presented research reports</li>
+                                    <li>Collaborated with talented students from various schools</li>
+                                </ul>
+                            </div>
+                            <div class="activity-links">
+                                <a href="https://www.facebook.com/pima.camp" class="link-btn" target="_blank">
+                                    <span class="link-icon">🌐</span> Fanpage
+                                </a>
+                                <a href="https://drive.google.com/your-certificate-link" class="link-btn" target="_blank">
+                                    <span class="link-icon">📜</span> Certificate
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Summer Camp 2: VIASM -->
+                <div class="timeline-item" data-category="summer-camp">
+                    <div class="timeline-marker"></div>
+                    <div class="activity-card">
+                        <div class="activity-image">
+                            <img src="Ảnh\summercamp.jpg" alt="VIASM Camp" class="activity-img" data-full="Ảnh\summercamp.jpg">
+                            <div class="image-overlay">
+                                <span class="zoom-icon">🔍</span>
+                            </div>
+                        </div>
+                        <div class="activity-content">
+                            <div class="activity-header">
+                                <h3 class="activity-title">Selected Participant</h3>
+                                <span class="activity-organization">VIASM Math Summer Camp</span>
+                                <span class="activity-date">July 2025</span>
+                            </div>
+                            <div class="activity-description">
+                                <p>Vietnam Institute for Advanced Studies in Mathematics training camp</p>
+                                <ul class="activity-achievements">
+                                    <li>Selected as one of 40 students who excelled in the national olympiad</li>
+                                    <li>Part of national key program for mathematics development 2021-2030</li>
+                                    <li>Experienced college math beyond olympiad level</li>
+                                    <li>Met with mathematics professionals and researchers</li>
+                                    <li>Participated in team-building activities with top students nationwide</li>
+                                </ul>
+                            </div>
+                            <div class="activity-links">
+                                <a href="https://drive.google.com/your-certificate-link" class="link-btn" target="_blank">
+                                    <span class="link-icon">📜</span> Certificate
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Speaker Event -->
+                <div class="timeline-item" data-category="speaker">
+                    <div class="timeline-marker"></div>
+                    <div class="activity-card">
+                        <div class="activity-image">
+                            <img src="Ảnh\hht-speaker.JPG" alt="Speaker Event" class="activity-img" data-full="Ảnh\hht-speaker.JPG">
+                            <div class="image-overlay">
+                                <span class="zoom-icon">🔍</span>
+                            </div>
+                        </div>
+                        <div class="activity-content">
+                            <div class="activity-header">
+                                <h3 class="activity-title">Guest Speaker</h3>
+                                <span class="activity-organization">Hoang Hoa Tham Middle School</span>
+                                <span class="activity-date">March 2024</span>
+                            </div>
+                            <div class="activity-description">
+                                <p>Educational outreach and mentorship event</p>
+                                <ul class="activity-achievements">
+                                    <li>Shared math study experiences with over 1000 students</li>
+                                    <li>Provided strategic advice about preparing for upcoming exams</li>
+                                    <li>Shared personal journey and learning methodologies</li>
+                                    <li>Hosted interactive minigames with book prizes to engage students</li>
+                                </ul>
+                            </div>
+                            <div class="activity-links">
+                                <a href="https://drive.google.com/your-image-link" class="link-btn" target="_blank">
+                                    <span class="link-icon">📷</span> Event Photos
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Community Service 1: Ấm lòng trẻ thơ -->
+                <div class="timeline-item" data-category="community-service">
+                    <div class="timeline-marker"></div>
+                    <div class="activity-card community-service">
+                        <div class="activity-image">
+                            <img src="Ảnh\amlongtretho.jpg" alt="Ấm lòng trẻ thơ" class="activity-img" data-full="Ảnh\amlongtretho.jpg">
+                            <div class="image-overlay">
+                                <span class="zoom-icon">🔍</span>
+                            </div>
+                        </div>
+                        <div class="activity-content">
+                            <div class="activity-header">
+                                <h3 class="activity-title">Member</h3>
+                                <span class="activity-organization">Ấm lòng trẻ thơ</span>
+                                <span class="activity-date">May 2025 - Present</span>
+                            </div>
+                            <div class="activity-description">
+                                <p>Charitable organization supporting underprivileged children and communities</p>
+                                <ul class="activity-achievements">
+                                    <li>Donated over 80 million VND — including rice, seasonings, and hygiene items — to disadvantaged communities in Quang Ngai</li>
+                                    <li>Served more than 1,000 healthy meals to patients and families of underprivileged pediatric patients at Nhi Dong 1 Hospital</li>
+                                    <li>Organized an event providing over 100 gifts to orphans at Buu Nghiem Pagoda in Dong Thap</li>
+                                </ul>
+                                <div class="impact-stats">
+                                    <div class="stat-item">
+                                        <span class="stat-number">80M+</span>
+                                        <span class="stat-label">VND Donated</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-number">1,000+</span>
+                                        <span class="stat-label">Meals Served</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-number">100+</span>
+                                        <span class="stat-label">Gifts Provided</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="activity-links">
+                                <a href="https://www.facebook.com/amlongtretho" class="link-btn" target="_blank">
+                                    <span class="link-icon">🌐</span> Fanpage
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Community Service 2: Quán Cơm Xã Hội Nụ Cười -->
+                <div class="timeline-item" data-category="community-service">
+                    <div class="timeline-marker"></div>
+                    <div class="activity-card community-service">
+                        <div class="activity-image">
+                            <img src="quan-com-nu-cuoi.jpg" alt="Quán Cơm Xã Hội Nụ Cười" class="activity-img" data-full="quan-com-nu-cuoi-full.jpg">
+                            <div class="image-overlay">
+                                <span class="zoom-icon">🔍</span>
+                            </div>
+                        </div>
+                        <div class="activity-content">
+                            <div class="activity-header">
+                                <h3 class="activity-title">Volunteer</h3>
+                                <span class="activity-organization">Quán Cơm Xã Hội Nụ Cười</span>
+                                <span class="activity-date">June 2024</span>
+                            </div>
+                            <div class="activity-description">
+                                <p>A social kitchen providing free meals to low-income individuals</p>
+                                <ul class="activity-achievements">
+                                    <li>Collaborated with a team of 4-5 volunteers (with more than 20 staff) to prepare, cook, and serve between 200 and 300 nutritious meals in a single day</li>
+                                    <li>Assisted in meal preparation, including ingredient washing, food portioning, and packaging</li>
+                                    <li>Supported post-service activities such as cleaning the kitchen area, reorganizing tables, and chairs</li>
+                                </ul>
+                                <div class="impact-stats">
+                                    <div class="stat-item">
+                                        <span class="stat-number">300</span>
+                                        <span class="stat-label">Meals/Day</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-number">20+</span>
+                                        <span class="stat-label">Team Members</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="activity-links">
+                                <a href="https://drive.google.com/your-image-link" class="link-btn" target="_blank">
+                                    <span class="link-icon">📷</span> Event Photos
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+
+            </div>
+        </div>
+
+        <!-- Image Modal -->
+        <div class="image-modal" id="imageModal">
+            <div class="modal-overlay"></div>
+            <div class="modal-image-container">
+                <span class="close-image-modal">&times;</span>
+                <img src="" alt="Full size image" class="modal-full-image">
+                <div class="modal-caption"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="achievements.js"></script>
+    <script src="leadership.js"></script>
+</body>
+</html>
