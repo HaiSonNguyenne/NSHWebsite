@@ -1,0 +1,432 @@
+/* Research & Internship Section Styles */
+#research {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);
+    min-height: 100vh;
+}
+
+/* Section Title */
+#research .section-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 3rem;
+    background: linear-gradient(135deg, #4a90e2 0%, #5dade2 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+}
+
+#research .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #4a90e2, #5dade2);
+    border-radius: 2px;
+}
+
+/* Tab Navigation */
+.research-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 3rem;
+}
+
+.research-tab {
+    padding: 12px 30px;
+    background: white;
+    border: 2px solid #e0e6ed;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.research-tab::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(135deg, #4a90e2, #5dade2);
+    transition: width 0.3s ease;
+    z-index: -1;
+}
+
+.research-tab:hover {
+    border-color: #4a90e2;
+    transform: translateY(-2px);
+}
+
+.research-tab.active {
+    background: linear-gradient(135deg, #4a90e2, #5dade2);
+    color: white;
+    border-color: transparent;
+}
+
+/* Research Content Container */
+.research-content {
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+
+.research-content.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Research Grid */
+.research-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Research Card */
+.research-card {
+    background: white;
+    border-radius: 16px;
+    padding: 35px;
+    box-shadow: 0 10px 30px rgba(74, 144, 226, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.research-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #4a90e2, #5dade2);
+}
+
+.research-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(74, 144, 226, 0.15);
+}
+
+/* Research Card Header */
+.research-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.research-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #4a90e2;
+    opacity: 0.3;
+}
+
+.research-type {
+    background: linear-gradient(135deg, #4a90e2, #5dade2);
+    color: white;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+/* Research Title & Role */
+.research-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.research-role {
+    display: inline-block;
+    color: #5dade2;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+/* Research Abstract */
+.research-abstract {
+    margin-bottom: 20px;
+}
+
+.research-abstract h4 {
+    color: #4a90e2;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.research-abstract p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* Keywords */
+.research-keywords {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.keyword {
+    background: #f0f5fb;
+    color: #4a90e2;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border: 1px solid #e0e6ed;
+}
+
+/* Research Actions */
+.research-actions {
+    display: flex;
+    gap: 15px;
+}
+
+.research-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #4a90e2, #5dade2);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.research-link:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(74, 144, 226, 0.3);
+}
+
+.link-arrow {
+    transition: transform 0.3s ease;
+}
+
+.research-link:hover .link-arrow {
+    transform: translate(3px, -3px);
+}
+
+/* Internship Timeline */
+.internship-timeline {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Internship Card */
+.internship-card {
+    background: white;
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(74, 144, 226, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.internship-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, #4a90e2, #5dade2);
+}
+
+/* Internship Period */
+.internship-period {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    color: #4a90e2;
+    font-weight: 600;
+}
+
+.period-line {
+    flex: 1;
+    height: 2px;
+    background: linear-gradient(90deg, #4a90e2, #5dade2);
+    opacity: 0.3;
+}
+
+/* Company Info */
+.company-info {
+    margin-bottom: 30px;
+}
+
+.company-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.position-title {
+    font-size: 1.1rem;
+    color: #4a90e2;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.position-subtitle {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* Internship Description */
+.internship-description {
+    margin-bottom: 30px;
+}
+
+.internship-description h4 {
+    color: #4a90e2;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.responsibility-list {
+    list-style: none;
+    padding: 0;
+}
+
+.responsibility-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 12px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.bullet-point {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #5dade2;
+    border-radius: 50%;
+    margin-top: 8px;
+    flex-shrink: 0;
+}
+
+/* Certificate Link */
+.certificate-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    background: white;
+    border: 2px solid #4a90e2;
+    color: #4a90e2;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.certificate-link:hover {
+    background: linear-gradient(135deg, #4a90e2, #5dade2);
+    color: white;
+    border-color: transparent;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(74, 144, 226, 0.3);
+}
+
+.cert-icon {
+    transition: transform 0.3s ease;
+}
+
+.certificate-link:hover .cert-icon {
+    transform: rotate(5deg);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .research-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .research-tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .research-tab {
+        width: 200px;
+        text-align: center;
+    }
+    
+    .research-card,
+    .internship-card {
+        padding: 25px;
+    }
+    
+    .research-number {
+        font-size: 2rem;
+    }
+    
+    .company-name {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    #research {
+        padding: 60px 20px;
+    }
+    
+    .research-grid {
+        gap: 20px;
+    }
+    
+    .research-card,
+    .internship-card {
+        padding: 20px;
+    }
+    
+    .research-title {
+        font-size: 1.1rem;
+    }
+    
+    .internship-period {
+        font-size: 0.9rem;
+    }
+}
