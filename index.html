@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="achievements.css">
     <link rel="stylesheet" href="leadership.css">
+    <link rel="stylesheet" href="research.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -21,6 +22,7 @@
                 <li><a href="#about" class="nav-link active">About Me</a></li>
                 <li><a href="#achievements" class="nav-link">Achievements</a></li>
                 <li><a href="#leadership" class="nav-link">Leadership & Activities</a></li>
+                <li><a href="#research" class="nav-link">Research & Internship</a></li>
             </ul>
             <div class="hamburger">
                 <span></span>
@@ -37,7 +39,7 @@
                 <div class="sphere-wrapper">
                     <canvas id="sphereCanvas"></canvas>
                     <div class="avatar-container">
-                        <img src="Ảnh\avatar1.jpg" alt="Son Hai Nguyen" class="Ảnh\avatar1.jpg">
+                        <img src="Ảnh\avatar.jpg" alt="Son Hai Nguyen" class="Ảnh\avatar.jpg">
                     </div>
                 </div>
             </div>
@@ -60,15 +62,15 @@
                         </div>
                         <div class="interest-item">
                             <span class="icon">Σ</span>
-                            <span>Linear Algebra</span>
+                            <span>Abstract Algebra</span>
                         </div>
                         <div class="interest-item">
                             <span class="icon">φ</span>
-                            <span>Geometry</span>
+                            <span>Existential Crisis</span>
                         </div>
                         <div class="interest-item">
                             <span class="icon">λ</span>
-                            <span>Philosophy</span>
+                            <span>Chúa Yapping</span>
                         </div>
                     </div>
                     <div class="cta-buttons">
@@ -655,10 +657,152 @@
             </div>
         </div>
     </section>
+    
+    <!-- Research & Internship Section -->
+    <section id="research" class="section">
+        <div class="section-container">
+            <h2 class="section-title">Research & Internship</h2>
+            
+            <!-- Section Tabs -->
+            <div class="research-tabs">
+                <button class="research-tab active" data-tab="research">Research Publications</button>
+                <button class="research-tab" data-tab="internship">Professional Experience</button>
+            </div>
+
+            <!-- Research Content -->
+            <div class="research-content active" id="research-panel">
+                <div class="research-grid">
+                    
+                    <!-- Research Paper 1 -->
+                    <div class="research-card">
+                        <div class="research-card-header">
+                            <div class="research-number">01</div>
+                            <div class="research-type">Machine Learning</div>
+                        </div>
+                        <h3 class="research-title">
+                            Graphical Model and Latent Dirichlet Allocation
+                        </h3>
+                        <div class="research-role">Co-author</div>
+                        
+                        <div class="research-abstract">
+                            <h4>Abstract</h4>
+                            <p>This report summarizes and analyzes the Latent Dirichlet Allocation (LDA) model, a tool for uncovering hidden topics from large text corpora. We provide a brief overview of the theoretical foundations of the Dirichlet and multinomial distributions, as well as the probabilistic structure of LDA, including enhanced variants designed to improve efficiency in rare data scenarios.</p>
+                        </div>
+                        
+                        <div class="research-keywords">
+                            <span class="keyword">Generative Model</span>
+                            <span class="keyword">Probabilistics</span>
+                            <span class="keyword">Optimizing</span>
+                        </div>
+                        
+                        <div class="research-actions">
+                            <a href="https://drive.google.com/file/d/1PiNYuI7GVfGjoy31tsHNPQo74cV81KNb/view?usp=sharing" 
+                            target="_blank" 
+                            class="research-link">
+                                <span class="link-text">View Paper</span>
+                                <svg class="link-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Research Paper 2 -->
+                    <div class="research-card">
+                        <div class="research-card-header">
+                            <div class="research-number">02</div>
+                            <div class="research-type">Deep Learning</div>
+                        </div>
+                        <h3 class="research-title">
+                            A Deep Learning Model for Drug-Target Interactions Prediction in Drug Discovery
+                        </h3>
+                        <div class="research-role">Co-author</div>
+                        
+                        <div class="research-abstract">
+                            <h4>Abstract</h4>
+                            <p>This study proposes an effective model for predicting binding affinity values in drug-target interaction (DTI) tasks by leveraging a Long Short-Term Memory (LSTM) network to extract sequential features from SMILES strings of drugs and amino acid sequences of proteins.</p>
+                        </div>
+                        
+                        <div class="research-keywords">
+                            <span class="keyword">Deep Learning</span>
+                            <span class="keyword">Biology</span>
+                            <span class="keyword">Optimizing</span>
+                        </div>
+                        
+                        <div class="research-actions">
+                            <a href="https://drive.google.com/file/d/11bkaiFRZ81CX8YVH5oduDIYHO0YHdEez/view?usp=sharing" 
+                            target="_blank" 
+                            class="research-link">
+                                <span class="link-text">View Paper</span>
+                                <svg class="link-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Internship Content -->
+            <div class="research-content" id="internship-panel">
+                <div class="internship-timeline">
+                    
+                    <!-- Internship Experience -->
+                    <div class="internship-card">
+                        <div class="internship-period">
+                            <span class="period-start">June 2025</span>
+                            <span class="period-line"></span>
+                            <span class="period-end">August 2025</span>
+                        </div>
+                        
+                        <div class="internship-content">
+                            <div class="company-info">
+                                <h3 class="company-name">HOAN CAU Technology Technique Co., LTD</h3>
+                                <div class="position-title">Software Testing Intern</div>
+                                <div class="position-subtitle">Manufacturing & Development Intern</div>
+                            </div>
+                            
+                            <div class="internship-description">
+                                <h4>Key Responsibilities & Achievements</h4>
+                                <ul class="responsibility-list">
+                                    <li>
+                                        <span class="bullet-point"></span>
+                                        <span>Supply and distribute machinery, tools, and robots to foster the growth of domestic industries</span>
+                                    </li>
+                                    <li>
+                                        <span class="bullet-point"></span>
+                                        <span>Manufacture and develop specialized agricultural equipment, including pig stunning machines</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="internship-certificate">
+                                <a href="https://drive.google.com/file/d/1BrhxNNp1jp86FcyOZTyCUTFq-z9b_nPm/view?usp=sharing" 
+                                target="_blank" 
+                                class="certificate-link">
+                                    <svg class="cert-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                        <polyline points="14 2 14 8 20 8"/>
+                                        <line x1="16" y1="13" x2="8" y2="13"/>
+                                        <line x1="16" y1="17" x2="8" y2="17"/>
+                                        <polyline points="10 9 9 9 8 9"/>
+                                    </svg>
+                                    <span>View Certificate</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <script src="script.js"></script>
     <script src="achievements.js"></script>
     <script src="leadership.js"></script>
+    <script src="research.js"></script>
 </body>
 </html>
-
